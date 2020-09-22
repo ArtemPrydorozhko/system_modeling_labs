@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab1</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <div class="chart-container container">
+        <div class="chart-exp">
+            <div class="chart-exp-input form-group">
+                <h2>exponential</h2>
+                <label for="chart-exp-number">Amount</label>
+                <input class="form-control" type="number" value="1000" placeholder="number" id="chart-exp-number">
+                <label for="chart-exp-lambda">Lambda</label>
+                <input  class="form-control" type="number" id="chart-exp-lambda" value="1">
+                <button class="chart-generate btn btn-outline-primary" id="chart-generate-exp">Generate</button>
+            </div>
+            <canvas id="chart-exp" width="400" h></canvas>
+            <p id="chi-exp"></p>
+            <p id="chi-theor-exp"></p>
+            <p id="mean-exp"></p>
+            <p id="variance-exp"></p>
+        </div>
+        <div class="chart-normal">
+            <div class="chart-normal-input form-group">
+                <h2>normal</h2>
+                <label for="chart-normal-number">Amount </label>
+                <input  class="form-control" type="number" value="1000" placeholder="number" id="chart-normal-number">
+
+                <label for="chart-normal-alpha">Alpha </label>
+                <input  class="form-control" type="number" value="5" placeholder="alpha" id="chart-normal-alpha">
+
+                <label for="chart-normal-sigma">Sigma </label>
+                <input class="form-control" type="number" value="10" placeholder="sigma" id="chart-normal-sigma">
+
+                <button class="chart-generate btn btn-outline-primary"  id="chart-generate-normal">Generate</button>
+            </div>
+            <canvas id="chart-normal" width="400" h></canvas>
+            <p id="chi-normal"></p>
+            <p id="chi-theor-normal"></p>
+            <p id="mean-normal"></p>
+            <p id="variance-normal"></p>
+        </div>
+        <div class="chart-uniform">
+            <div class="chart-normal-input form-group">
+                <h2>uniform</h2>
+                <label for="chart-uniform-number">Amount</label>
+                <input  class="form-control" type="number" value="1000" placeholder="number" id="chart-uniform-number">
+
+                <label for="chart-uniform-a">A</label>
+                <input  class="form-control" type="number" value="1220703125" placeholder="a" id="chart-uniform-a">
+
+                <label for="chart-uniform-c">C</label>
+                <input class="form-control" type="number" value="2147483648" placeholder="c" id="chart-uniform-c">
+
+                <button class="chart-generate btn btn-outline-primary" id="chart-generate-uniform">Generate</button>
+            </div>
+            <canvas id="chart-uniform" width="400" h></canvas>
+            <p id="chi-uniform"></p>
+            <p id="chi-theor-uniform"></p>
+            <p id="mean-uniform"></p>
+            <p id="variance-uniform"></p>
+        </div>
+    </div>
+    <script src="./dist/renderer.js"></script>
+</body>
+
+</html>

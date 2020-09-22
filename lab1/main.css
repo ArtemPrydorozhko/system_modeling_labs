@@ -1,0 +1,32 @@
+.chart-container {
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.chart-exp,
+.chart-normal,
+.chart-uniform {
+    flex-basis: 33%;
+}
+
+.chart-exp-input,
+.chart-normal-input,
+.chart-uniform-input {
+    /* height: 200px; */
+}
+
+label {
+    display: block;
+}
+
+.chart-generate {
+    display: block;
+    margin-top: 5px;
+}
+
+canvas {
+    width: 100%;
+    height: 400px;
+}
